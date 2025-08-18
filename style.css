@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-field {
+    height: 960px;
+    width: 960px;
+    border: 1px solid black;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.row {
+    border: 1px solid gray;
+    flex: 1;
+    display: flex;
+}
