@@ -23,7 +23,7 @@ startButton.addEventListener("click", () => {
                 let opacity = Number(window.getComputedStyle(row).getPropertyValue("opacity"));
                 console.log(opacity);
                 if(opacity < 1.0) {
-                    opacity += .2;
+                    opacity += .1;
                 };
                 console.log(opacity);
                 row.setAttribute("style", `opacity: ${opacity}`);

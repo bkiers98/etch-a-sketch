@@ -24,7 +24,7 @@ body {
 
 .row {
     flex: 1;
-    background-color: black;
+    background-color: darkmagenta;
     opacity: 0;
 }
 
