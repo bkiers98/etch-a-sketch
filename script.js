@@ -19,7 +19,14 @@ startButton.addEventListener("click", () => {
             const row = document.createElement("div");
             row.setAttribute("class", "row");
             row.addEventListener("mouseenter", () => {
-                row.setAttribute("class", "row-hovered");
+                console.log(row);
+                let opacity = Number(window.getComputedStyle(row).getPropertyValue("opacity"));
+                console.log(opacity);
+                if(opacity < 1.0) {
+                    opacity += .2;
+                };
+                console.log(opacity);
+                row.setAttribute("style", `opacity: ${opacity}`);
             });
             column.appendChild(row);
         }
