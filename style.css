@@ -1,7 +1,12 @@
 body {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.start {
+    margin: 20px;
 }
 
 .grid-field {
@@ -22,7 +27,10 @@ body {
 }
 
 .row {
-    border: 1px solid gray;
     flex: 1;
-    display: flex;
+}
+
+.row-hovered {
+    flex: 1;
+    background-color: gray;
 }
